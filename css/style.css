@@ -10,8 +10,8 @@ ul {
 }
 
 a {
-    text-decoration: none;   
-    color: inherit; 
+    text-decoration: none;
+    color: inherit;
 }
 
 img {
@@ -22,8 +22,11 @@ img {
 /* Layout */
 .container {
     width: 90%;
-    max-width: 100%;
+    max-width: 900px;
     margin: 0 auto;
+
+    /* debug */
+    border: 2px solid blue;
 }
 
 /* Buttons */
@@ -39,15 +42,16 @@ header {
     left: 0;
     z-index: 999999;
     width: 100%;
+    background-color: darkorange;
+    color: white;
 }
 
 .header-nav {
-    background-color: darkorange;
     height: 60px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+
 }
 
 .header-nav-list {
@@ -55,7 +59,6 @@ header {
     justify-content: center;
     gap: 10px;
     width: 30%;
-    color: white;
 }
 
 .header-logo {
@@ -87,8 +90,28 @@ header {
 }
 
 /* MAIN */
+main {
+    padding-top: 60px;
+}
+
 body {
     font-family: sans-serif;
+}
+
+.production-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* margin-top: 50px; */
+}
+
+.card {
+    width: 30%;
+    margin: 40px 10px;
+
+    /* debug */
+    height: 500px;
+    border: 1px solid green;
 }
 
 /* FOOTER */
